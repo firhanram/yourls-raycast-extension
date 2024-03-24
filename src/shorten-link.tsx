@@ -14,6 +14,7 @@ export default function ShortLink() {
   const [urlError, setUrlError] = useState("");
   const [keywordError, setKeywordError] = useState("");
   const [titleError, setTitleError] = useState("");
+  const [keywordValue, setKeywordValue] = useState("");
 
   const handleSubmit = async (values: TValues) => {
     const toast = await showToast({
@@ -108,16 +109,25 @@ export default function ShortLink() {
         title="Keyword"
         placeholder="example-keyword"
         error={keywordError}
-        onChange={() => {
+        value={keywordValue}
+        onChange={(val) => {
           if (keywordError && keywordError.length > 0) {
             setKeywordError("");
           }
+          setKeywordValue(val.toLowerCase());
         }}
+        info="Keyword for custom short URL"
         onBlur={(ev) => {
           const value = ev.target.value;
 
           if (!value) {
             setKeywordError("Keyword is required");
+          }
+
+          const isContainsSpace = value?.includes(" ");
+
+          if (isContainsSpace) {
+            setKeywordError("Should not contain space");
           }
         }}
       />
