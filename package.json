@@ -33,6 +33,7 @@
     }
   ],
   "dependencies": {
+    "@braintree/sanitize-url": "^7.0.1",
     "@raycast/api": "^1.69.0",
     "node-fetch": "^3.3.2"
   },
