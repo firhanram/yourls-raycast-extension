@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "yourls",
-  "title": "Yourls",
-  "description": "Yourls Link Shortener",
+  "title": "Yourls Link Shortener",
+  "description": "Create a shortened link using Yourls",
   "icon": "icon.png",
   "author": "firhan_ramadhan",
   "license": "MIT",
