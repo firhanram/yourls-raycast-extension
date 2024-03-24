@@ -10,6 +10,7 @@
     {
       "name": "shorten-link",
       "title": "Create Shortened Link",
+      "subtitle": "Yourls",
       "description": "Create a shortened link",
       "mode": "view"
     }
