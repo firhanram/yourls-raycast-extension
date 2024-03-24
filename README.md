@@ -1,3 +1,3 @@
-# Yoruls
+# Yourls
 
 Yourls Link Shortener
