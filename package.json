@@ -3,15 +3,33 @@
   "name": "yourls",
   "title": "Yourls",
   "description": "Yourls Link Shortener",
-  "icon": "command-icon.png",
+  "icon": "icon.png",
   "author": "firhan_ramadhan",
   "license": "MIT",
   "commands": [
     {
-      "name": "index",
-      "title": "Show List",
-      "description": "Template for showing a static list",
+      "name": "shorten-link",
+      "title": "Create Shortened Link",
+      "description": "Create a shortened link",
       "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "api",
+      "title": "Yourls API URL",
+      "description": "Your Yourls API URL",
+      "type": "textfield",
+      "placeholder": "http://your-own-domain-here.com/yourls-api.php",
+      "required": true
+    },
+    {
+      "name": "signature",
+      "title": "Yourls Signature",
+      "placeholder": "Your secret signature token",
+      "type": "password",
+      "required": true,
+      "description": "Your Yourls signature token"
     }
   ],
   "dependencies": {
